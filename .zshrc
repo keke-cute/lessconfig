@@ -37,3 +37,7 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 #ps -ef | grep ueberzug | grep -v grep | cut -c 9-15 | xargs kill -s 9
 pkill -9 ueberzug ; true
+export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+export PATH=$PATH:$HOME/.keke/bin
