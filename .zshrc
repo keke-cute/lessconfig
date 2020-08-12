@@ -35,8 +35,6 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#ps -ef | grep ueberzug | grep -v grep | cut -c 9-15 | xargs kill -s 9
-pkill -9 ueberzug ; true
 export LDFLAGS="-L/usr/local/opt/libxml2/lib"
 export CPPFLAGS="-I/usr/local/opt/libxml2/include"
 export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
