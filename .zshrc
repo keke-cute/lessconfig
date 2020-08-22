@@ -39,3 +39,5 @@ export LDFLAGS="-L/usr/local/opt/libxml2/lib"
 export CPPFLAGS="-I/usr/local/opt/libxml2/include"
 export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 export PATH=$PATH:$HOME/.keke/bin
+. /Users/keke/.nix-profile/etc/profile.d/nix.sh
+
