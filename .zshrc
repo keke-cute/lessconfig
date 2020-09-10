@@ -40,3 +40,5 @@ export CPPFLAGS="-I/usr/local/opt/libxml2/include"
 export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 export PATH=$PATH:$HOME/.keke/bin
 if [ -e /Users/keke/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/keke/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+alias lupingx="ffmpeg -y -f avfoundation -i 1:0 -framerate 60 -c:v libx264 -r 60 -pix_fmt yuv420p -preset 0 -crf 19 -c:a aac -b:a 192k \"$HOME/Screen Record $(date "+%Y-%m-%d %H-%M-%S").mp4\""
