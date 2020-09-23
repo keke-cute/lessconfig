@@ -6,7 +6,7 @@ window:
       lines: 30
 
 # 背景半透明，方便抄代码
-background_opacity: 0
+background_opacity: 0.8
 
 # 实时重载配置文件，不用重启测试配置选项
 live_config_reload: true
@@ -38,7 +38,7 @@ colors:
 
 # 字体设置为等宽字体，可以用命令 fc-list 查看你系统的字体
 font:
-  size: 11
+  size: 18
 
   normal:
     family: OperatorMono Nerd Font
