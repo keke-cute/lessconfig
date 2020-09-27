@@ -1,9 +1,9 @@
 # 默认窗口无标题栏，16:9的窗口比例启动
 window:
-    decorations: "none"
+#    decorations: "none"
     dimensions:
-      columns: 120
-      lines: 30
+      columns: 130
+      lines: 31
 
 # 背景半透明，方便抄代码
 background_opacity: 0.8
