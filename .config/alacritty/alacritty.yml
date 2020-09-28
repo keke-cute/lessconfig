@@ -1,6 +1,6 @@
 # 默认窗口无标题栏，16:9的窗口比例启动
 window:
-#    decorations: "none"
+    decorations: "none"
     dimensions:
       columns: 130
       lines: 31
