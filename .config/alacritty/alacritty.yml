@@ -2,8 +2,8 @@
 window:
     decorations: "none"
     dimensions:
-      columns: 125
-      lines: 30
+      columns: 105
+      lines: 27
 
 # 背景半透明，方便抄代码
 background_opacity: 0.8
@@ -13,6 +13,6 @@ live_config_reload: true
 
 # 字体
 font:
-  size: 18
+  size: 23
   normal:
     family: OperatorMono Nerd Font

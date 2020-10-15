@@ -35,3 +35,4 @@ alias lupingx="ffmpeg -y -f avfoundation -i 1:0 -framerate 60 -c:v libx264 -r 60
 
 export GOPATH="$HOME/Src/go"
 export PATH="$PATH:$HOME/Src/go/bin"
+if [ -e /Users/keke/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/keke/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
