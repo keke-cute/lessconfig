@@ -13,6 +13,6 @@ live_config_reload: true
 
 # 字体
 font:
-  size: 23
+  size: 10
   normal:
     family: OperatorMono Nerd Font
