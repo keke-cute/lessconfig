@@ -29,7 +29,6 @@ mapLaunch('s', 'Safari')
 mapLaunch('e', 'Emacs')
 mapLaunch('d', 'Screen Sharing')
 mapLaunch('q', 'screenshot')
-mapLaunch('a', 'alacritty')
 mapLaunch('m', 'Spotify')
 mapLaunch('f', 'Finder')
 
