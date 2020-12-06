@@ -6,42 +6,40 @@
 #      lines: 27
 
 # 背景半透明，方便抄代码
-#background_opacity: 0.55
+background_opacity: 0.7
 
 # 实时重载配置文件，不用重启测试配置选项
 live_config_reload: true
-# Colors (PaperColor - Light)
+
+# Colors (Konsole's Dark Pastels)
 colors:
   # Default colors
   primary:
-    background: '0xeeeeee'
-    foreground: '0x878787'
-
-  cursor:
-    text: '0xeeeeee'
-    cursor: '0x878787'
+    background: '0x2C2C2C'
+    foreground: '0xDCDCCC'
 
   # Normal colors
   normal:
-    black:   '0xeeeeee'
-    red:     '0xaf0000'
-    green:   '0x008700'
-    yellow:  '0x5f8700'
-    blue:    '0x0087af'
-    magenta: '0x878787'
-    cyan:    '0x005f87'
-    white:   '0x444444'
+    black:   '0x3F3F3F'
+    red:     '0x705050'
+    green:   '0x60B48A'
+    yellow:  '0xDFAF8F'
+    blue:    '0x9AB8D7'
+    magenta: '0xDC8CC3'
+    cyan:    '0x8CD0D3'
+    white:   '0xDCDCCC'
 
   # Bright colors
   bright:
-    black:   '0xbcbcbc'
-    red:     '0xd70000'
-    green:   '0xd70087'
-    yellow:  '0x8700af'
-    blue:    '0xd75f00'
-    magenta: '0xd75f00'
-    cyan:    '0x005faf'
-    white:   '0x005f87'
+    black:   '0x709080'
+    red:     '0xDCA3A3'
+    green:   '0x72D5A3'
+    yellow:  '0xF0DFAF'
+    blue:    '0x94BFF3'
+    magenta: '0xEC93D3'
+    cyan:    '0x93E0E3'
+    white:   '0xFFFFFF'
+
 font:
   size: 9
   normal:
