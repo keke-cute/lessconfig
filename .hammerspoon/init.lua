@@ -26,11 +26,12 @@ function mapLaunch(key, name, showName)
 end
 
 mapLaunch('s', 'Safari')
-mapLaunch('e', 'Emacs')
+mapLaunch('e', 'EmacsMac')
 mapLaunch('d', 'Screen Sharing')
 mapLaunch('q', 'screenshot')
 mapLaunch('m', 'Spotify')
 mapLaunch('f', 'Finder')
+mapLaunch('a', 'Alacritty')
 
 function moveLeftHalf()
   local win = hs.window.focusedWindow()
