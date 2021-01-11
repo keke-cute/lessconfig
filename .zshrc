@@ -31,11 +31,11 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# 个人设置
+
 alias lupingx="ffmpeg -y -f avfoundation -i 1:0 -framerate 60 -c:v libx264 -r 60 -pix_fmt yuv420p -preset 0 -crf 19 -c:a aac -b:a 192k \"$HOME/Screen Record $(date "+%Y-%m-%d %H-%M-%S").mp4\""
 alias luping="ffmpeg -f x11grab -s 1920x1080 -r 25 -i $DISPLAY -c:v libx264 -b:v 800k -s 1920x1080 test.mp4"
 alias e="emacsclient -c"
 alias zipai="ffmpeg -f v4l2 -s 640x480 -i /dev/video0 output.mpg"
 
 export PATH="$PATH:$HOME/go/bin"
-
-if [ -e /Users/keke/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/keke/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
