@@ -2,8 +2,8 @@
 window:
     decorations: "none"
     dimensions:
-      columns: 150
-      lines: 40
+      columns: 180
+      lines: 47
 
 # 背景半透明，方便抄代码
 background_opacity: 0.7
