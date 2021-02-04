@@ -1,0 +1,5 @@
+xcalib -d :0 ~/Downloads/NV133FHM-N52\ \#1\ 2018-03-05\ 10-23\ 2.2\ F-S\ XYZLUT+MTX.icc &
+picom &
+flameshot &
+$HOME/.config/polybar/launch.sh &
+feh --bg-fill /usr/share/backgrounds/archlinux/wild.png &
