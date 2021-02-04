@@ -158,10 +158,10 @@ windowRules = placeHook (smart (0.5, 0.5))
   <+> manageHook defaultConfig
 
 autostart = do
-  spawnOnce "xsetroot -cursor_name left_ptr &"
-  spawnOnce "systemctl --user restart polybar &"
-  spawnOnce "xwallpaper --zoom /etc/nixos/nixos/config/wallpapers/horizon.jpg &"
-  spawnOnce "xidlehook --not-when-fullscreen --not-when-audio --timer 600 slock \'\' &"
+  spawnOnce "~/.config/polybar/launch.sh &"
+  spawnOnce "feh --bg-fill /usr/share/backgrounds/archlinux/wild.png &"
+  spawnOnce "picom &"
+  spawnOnce "flameshot &"
   setWMName "LG3D"
 
 dbusClient = do
