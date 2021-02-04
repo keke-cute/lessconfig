@@ -16,7 +16,7 @@ separator=
 width=100%
 wm-name=xmonad
 tray-position = center
-tray-background =  ${colors.x1}
+#tray-background =  ${colors.x1}
 
 [colors]
 bg=${colors.transparent}
