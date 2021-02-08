@@ -39,3 +39,8 @@ alias e="emacsclient -c"
 alias zipai="ffmpeg -f v4l2 -s 640x480 -i /dev/video0 output.mpg"
 
 export PATH="$PATH:$HOME/go/bin"
+
+# Nix
+
+. /Users/keke/.nix-profile/etc/profile.d/nix.sh
+. "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
