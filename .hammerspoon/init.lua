@@ -26,7 +26,7 @@ function mapLaunch(key, name, showName)
 end
 
 mapLaunch('s', 'Firefox')
-mapLaunch('e', 'EmacsMac')
+mapLaunch('e', 'Emacs')
 mapLaunch('d', 'Screen Sharing')
 mapLaunch('q', 'screenshot')
 mapLaunch('m', 'Spotify')
