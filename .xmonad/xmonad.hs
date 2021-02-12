@@ -26,12 +26,13 @@ myConfig = defaultConfig
         [   ("<XF86AudioRaiseVolume>"  , spawn "pulsemixer --unmute && pulsemixer --change-volume +5")
           , ("<XF86AudioLowerVolume>"  , spawn "pulsemixer --unmute && pulsemixer --change-volume -5")
           , ("<XF86AudioMute>"         , spawn "pulsemixer --mute")
-          , ("<Print>"                 , spawn "flameshot gui -p ~/Pictures/Screenshots")
           , ("M-d"                     , spawn "rofi -show drun")
         ]
            
 myStartupHook = do
           spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 25 &"
           spawnOnce "picom"
-          spawnOnce "feh --bg-fill ~/Downloads/wall.png"
+          spawnOnce "feh --bg-fill ~/Downloads/wall.jpg"
+	  spawnOnce "onboard"
+ 	  spawnOnce "fcitx5"
           setWMName "LG3D"
