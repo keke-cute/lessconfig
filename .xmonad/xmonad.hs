@@ -26,7 +26,7 @@ myConfig = defaultConfig
         [   ("<XF86AudioRaiseVolume>"  , spawn "pulsemixer --unmute && pulsemixer --change-volume +5")
           , ("<XF86AudioLowerVolume>"  , spawn "pulsemixer --unmute && pulsemixer --change-volume -5")
           , ("<XF86AudioMute>"         , spawn "pulsemixer --mute")
-          , ("M-d"                     , spawn "rofi -show drun")
+          , ("M-p"                     , spawn "rofi -show drun")
         ]
            
 myStartupHook = do
