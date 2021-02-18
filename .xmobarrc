@@ -26,4 +26,4 @@ Config { font		= "xft:Source Han Serif SC:pixelsize=18:antialias=true:hinting=tr
                           ]
 	                  , sepChar = "%"
 	                  , alignSep = "}{"
-                          , template = " <icon=haskell_20.xpm/> <fc=#666666>|</fc> %UnsafeStdinReader% }{ <fc=#FFB86C>%cpu%</fc><fc=#666666> |</fc> <fc=#FF5555>%memory%</fc><fc=#666666> |</fc><fc=#b3afc2><icon=linux.xpm/></fc> %uname% <fc=#666666>|</fc> <fc=#c3e88d>%wlp1s0%</fc><fc=#666666> |</fc><fc=#E052BA>%battery%</fc><fc=#666666> |</fc> <icon=calendar-clock-icon_24.xpm/> <fc=#8BE9FD>%date%</fc><fc=#666666> |</fc>%trayerpad%"
+                          , template = " <icon=haskell_20.xpm/> <fc=#666666>|</fc> %UnsafeStdinReader% }{ <fc=#FFB86C>%cpu%</fc><fc=#666666> |</fc> <fc=#FF5555>%memory%</fc><fc=#666666> | </fc><fc=#b3afc2><icon=linux.xpm/></fc> %uname% <fc=#666666>|</fc> <fc=#c3e88d>%wlp1s0%</fc><fc=#666666> |</fc><fc=#E052BA>%battery%</fc><fc=#666666> |</fc> <icon=calendar-clock-icon_24.xpm/> <fc=#8BE9FD>%date%</fc><fc=#666666> |</fc>%trayerpad%"
