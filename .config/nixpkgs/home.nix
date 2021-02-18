@@ -7,6 +7,8 @@
     pkgs.alacritty
     pkgs.tmux
     pkgs.mpv
+    pkgs.go
+    pkgs.gopls
   ];
 
   nixpkgs.overlays = [
