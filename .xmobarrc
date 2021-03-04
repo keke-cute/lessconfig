@@ -1,5 +1,5 @@
-Config { font		= "xft:Source Han Serif SC:pixelsize=18:antialias=true:hinting=true"
-       , additionalFonts= [ "xft:Source Han Serif SC:pixelsize=13" ]
+Config { font		= "xft:Source Han Serif SC:pixelsize=21:antialias=true:hinting=true"
+       , additionalFonts= [ "xft:Source Han Serif SC:pixelsize=21" ]
        , bgColor        = "#282c34"
        , fgColor        = "#ff6c6b"
        , position 	= Top
