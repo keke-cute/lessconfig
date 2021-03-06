@@ -36,18 +36,19 @@ myXmobarPP h = xmobarPP {
 
 --autostart
 myStartupHook = do
-          spawnOnce "trayer-srg --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 25 &"
-          spawnOnce "picom"
-          spawnOnce "feh --bg-fill ~/Downloads/wall.jpg"
-	  spawnOnce "onboard"
- 	  spawnOnce "fcitx5"
+        spawnOnce "trayer-srg --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 25 &"
+        spawnOnce "picom"
+        spawnOnce "feh --bg-fill ~/Downloads/wall.jpg"
+        spawnOnce "onboard"
+        spawnOnce "fcitx5"
 -- autstart end
 
 -- keybind
-myKeyBind = [("<XF86AudioRaiseVolume>"  , spawn "pulsemixer --unmute && pulsemixer --change-volume +5"),
-            ("<XF86AudioLowerVolume>"  , spawn "pulsemixer --unmute && pulsemixer --change-volume -5"),
-            ("<XF86AudioMute>"         , spawn "pulsemixer --mute"),
-            ("M-p"                     , spawn "rofi -show drun")
+myKeyBind = [
+        ("<XF86AudioRaiseVolume>"  , spawn "pulsemixer --unmute && pulsemixer --change-volume +5"),
+        ("<XF86AudioLowerVolume>"  , spawn "pulsemixer --unmute && pulsemixer --change-volume -5"),
+        ("<XF86AudioMute>"         , spawn "pulsemixer --mute"),
+        ("M-p"                     , spawn "rofi -show drun")
         ]    
 -- keybind end
 
@@ -59,12 +60,12 @@ main = do
         terminal           = "alacritty",
         borderWidth        = 2,
         modMask            = mod4Mask ,
-        normalBorderColor = "#2e303e",
+        normalBorderColor  = "#2e303e",
         focusedBorderColor = "#e95678",
-       startupHook = myStartupHook <+> setFullscreenSupported,
-       manageHook = manageDocks <+> manageHook defaultConfig,
+        startupHook        = myStartupHook <+> setFullscreenSupported,
+        manageHook         = manageDocks <+> manageHook defaultConfig,
         layoutHook         = avoidStruts  $  layoutHook defaultConfig,
-        handleEventHook = handleEventHook def <+> fullscreenEventHook,
+        handleEventHook    = handleEventHook def <+> fullscreenEventHook,
         logHook            = dynamicLogWithPP $ myXmobarPP _topXmobar
     }`additionalKeysP` myKeyBind
 -- main function end
