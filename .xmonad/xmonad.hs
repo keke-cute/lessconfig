@@ -36,19 +36,11 @@ myXmobarPP h = xmobarPP {
 
 --autostart
 myStartupHook = do
-<<<<<<< HEAD
         spawnOnce "trayer-srg --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 25 &"
         spawnOnce "picom"
         spawnOnce "feh --bg-fill ~/Downloads/wall.jpg"
         spawnOnce "onboard"
         spawnOnce "fcitx5"
-=======
-          spawnOnce "trayer-srg --edge top --align right --widthtype request --padding 5 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 40 &"
-          spawnOnce "picom"
-          spawnOnce "feh --bg-fill ~/Downloads/wall.jpg"
-	  spawnOnce "onboard"
- 	  spawnOnce "fcitx5"
->>>>>>> e7bb84973f789fb744abb342202ca886a84c1a45
 -- autstart end
 
 -- keybind
