@@ -1,5 +1,5 @@
-Config { font		= "xft:Source Han Serif SC:pixelsize=21:antialias=true:hinting=true"
-       , additionalFonts= [ "xft:Source Han Serif SC:pixelsize=21" ]
+Config { font		= "xft:Source Han Serif SC:pixelsize=25:antialias=true:hinting=true"
+       , additionalFonts= [ "xft:Source Han Serif SC:pixelsize=25" ]
        , bgColor        = "#282c34"
        , fgColor        = "#ff6c6b"
        , position 	= Top
@@ -10,9 +10,6 @@ Config { font		= "xft:Source Han Serif SC:pixelsize=21:antialias=true:hinting=tr
        , iconRoot 	= "/home/keke/.xmonad/xpm/"  -- default: "."
        , commands 	= [ Run Date "%a, %b %d %Y, %H:%M:%S" "date" 10
                           , Run Network "wlp1s0" ["-t", "<icon=network_rx_8.xpm/> <rx>kb <icon=network_tx_8.xpm/> <tx>kb"] 20
-                          , Run Cpu ["-t", "<icon=cpu_20.xpm/>U: <total>%","-H","50","--high","red"] 20
-                          , Run Memory ["-t", "<icon=memory-icon_20.xpm/><used>M (<usedratio>%)"] 20
---                          , Run DiskU [("/", "<icon=harddisk-icon_20.xpm/><free> free")] [] 60
                           , Run Battery [
 	                      "-t", "<acstatus> <left>%"
 	                      , "--"
@@ -26,4 +23,4 @@ Config { font		= "xft:Source Han Serif SC:pixelsize=21:antialias=true:hinting=tr
                           ]
 	                  , sepChar = "%"
 	                  , alignSep = "}{"
-                          , template = " <icon=haskell_20.xpm/> <fc=#666666>|</fc> %UnsafeStdinReader% }{ <fc=#FFB86C>%cpu%</fc><fc=#666666> |</fc> <fc=#FF5555>%memory%</fc><fc=#666666> | </fc><fc=#b3afc2><icon=linux.xpm/></fc> %uname% <fc=#666666>|</fc> <fc=#c3e88d>%wlp1s0%</fc><fc=#666666> |</fc><fc=#E052BA>%battery%</fc><fc=#666666> |</fc> <icon=calendar-clock-icon_24.xpm/> <fc=#8BE9FD>%date%</fc><fc=#666666> |</fc>%trayerpad%"
+                          , template = " <icon=haskell_20.xpm/> <fc=#666666>|</fc> %UnsafeStdinReader% }{ <fc=#b3afc2><icon=linux.xpm/></fc> %uname% <fc=#666666>|</fc> <fc=#c3e88d>%wlp1s0%</fc><fc=#666666> |</fc><fc=#E052BA>%battery%</fc><fc=#666666> |</fc> <icon=calendar-clock-icon_24.xpm/> <fc=#8BE9FD>%date%</fc><fc=#666666> |</fc>%trayerpad%"
