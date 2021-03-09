@@ -13,9 +13,23 @@ live_config_reload: true
 
 # 字体
 font:
-  size: 16
   normal:
-    family: OperatorMono Nerd Font
+    family: OperatorMonoSSmLig Nerd Font
+    style: Regular
+
+  bold:
+    family: OperatorMonoSSmLig Nerd Font
+    style: Bold
+
+  italic:
+    family: OperatorMonoSSmLig Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: OperatorMonoSSmLig Nerd Font
+    style: Bold Italic
+
+  size: 13
 
 # 主题
 schemes:
