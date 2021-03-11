@@ -13,6 +13,7 @@ import XMonad.Layout.NoBorders
 import XMonad.Layout.Spacing
 import XMonad.Layout.Tabbed
 import XMonad.Layout.ToggleLayouts
+import XMonad.Layout.Renamed
 
 import Data.Maybe
 import Data.List
@@ -60,8 +61,8 @@ myKeyBind = [
 -- layouts config
 layouts = avoidStruts (tiled ||| Mirror tiled ||| tabs)
   where
-     tiled = gaps 4 4 $ toggleLayouts maximized (smartBorders (Tall 1 (3/100) (1/2)))
-     tabs = gaps 8 0 $ noBorders (tabbed shrinkText def)
+     tiled = renamed [Replace "N"] $ gaps 4 4 $ toggleLayouts maximized (smartBorders (Tall 1 (3/100) (1/2)))
+     tabs = renamed [Replace "T"] $ gaps 8 0 $ noBorders (tabbed shrinkText def)
      maximized = smartBorders Full
      gaps n k = spacingRaw False (Border n n n n) True (Border k k k k) True
 -- layouts config end
