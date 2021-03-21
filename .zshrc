@@ -39,5 +39,4 @@ alias ce="emacsclient -c"
 alias e="/Applications/MacPorts/EmacsMac.app/Contents/MacOS/Emacs -nw"
 alias ge="/Applications/MacPorts/EmacsMac.app/Contents/MacOS/Emacs"
 alias zipai="ffmpeg -f v4l2 -s 640x480 -i /dev/video0 output.mpg"
-
 export PATH="$PATH:$HOME/go/bin"
