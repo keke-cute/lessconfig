@@ -1,0 +1,6 @@
+patch:
+  menu:
+    page_size: 9
+    alternative_select_labels: [ 〡, 〢, 〣, 〤, 〥, 〦, 〧, 〨, 〩 ]
+  schema_list:
+  - schema: double_pinyin_flypy   # 小鹤雙拼

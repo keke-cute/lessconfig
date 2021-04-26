@@ -1,0 +1,15 @@
+patch:
+  style:
+    color_scheme: solarized_light
+    alpha: 0.75
+    font_face: "STFLGQKJF"
+    font_point: 21
+    label_font_point: 18
+    comment_font_point: 18
+    inline_preedit: true
+    corner_radius: 10
+    hilited_corner_radius: 0
+    border_height: 0
+    border_width: 0
+    line_spacing: 5
+    spacing: 10
