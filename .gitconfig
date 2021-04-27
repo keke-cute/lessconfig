@@ -2,3 +2,5 @@
 	signingkey = librek@protonmail.com
 	email = librek@protonmail.com
 	name = keke
+[commit]
+	gpgsign = true
