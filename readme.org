@@ -1,0 +1,14 @@
+* Dependencies
+  - git
+  - gnupg
+  - make
+  - ...
+* Usage
+  macOS
+  #+begin_src shell
+    make mac
+  #+end_src
+  Other
+  #+begin_src shell
+    make all
+  #+end_src
