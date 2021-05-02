@@ -9,9 +9,9 @@ ifeq ($(wildcard ~/Repos/password-store),)
 $(shell mkdir ~/Repos & git clone https://git.zx2c4.com/password-store ~/Repos/password-store)
 endif
 
-mac: all macpath
+mac: all macpath squirrel hammerspoon
 
-all: zsh config git
+all: zsh kitty rime git
 
 zsh:
 	@cp -v .zshrc ~/.zshrc
@@ -19,10 +19,14 @@ zsh:
 	@cp -v .zprofile ~/.zprofile
 	@echo "🤪 zsh 完成"
 
-config:
+kitty:
 	@cp -rv $(RDIR)/kitty $(DIR)
+	@echo "🤪 kitty 完成"
+
+rime:
 	@cp -rv $(RDIR)/rime $(DIR)
-	@echo "🤪 ~/.config 完成"
+	@echo "🤪 rime 完成"
+
 git:
 	@git config --global user.email librek@protonmail.com
 	@git config --global user.name keke
@@ -34,6 +38,14 @@ macpath:
 	@sudo perl -i -l -p -e 'print "/Users/keke/.local/bin\n/opt/local/sbin\n/opt/local/bin" if $$. == 1' /etc/paths
 	@echo "makefile里的perl $ 符号需要进行转义($$)"
 	@echo "🤪 /etc/paths 完成"
+
+squirrel:
+	@cp -rv $(RDIR)/rime/* ~/Library/Rime
+	@echo "🤪 鼠须管完成"
+
+hammerspoon:
+	@cp -rv .hammerspoon ~/
+	@echo "🤪 hammerspoon 完成"
 
 clean:
 	@rm -rvf $(DIR)/{kitty,rime}

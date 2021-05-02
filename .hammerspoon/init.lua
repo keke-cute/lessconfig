@@ -20,18 +20,18 @@ function launchOrNextWindow(name, showName)
 end
 
 function mapLaunch(key, name, showName)
-    hs.hotkey.bind({'alt'}, key, function()
+    hs.hotkey.bind({"cmd", "alt"}, key, function()
         launchOrNextWindow(name, showName)
     end)
 end
 
 mapLaunch('s', 'Firefox')
-mapLaunch('e', 'emacsMac')
+mapLaunch('e', 'Emacs')
 mapLaunch('d', 'Screen Sharing')
 mapLaunch('q', 'screenshot')
 mapLaunch('m', 'Spotify')
 mapLaunch('f', 'Finder')
-mapLaunch('a', 'Alacritty')
+mapLaunch('a', 'Kitty')
 
 function moveLeftHalf()
   local win = hs.window.focusedWindow()
