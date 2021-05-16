@@ -17,6 +17,7 @@ zsh:
 	@cp -v .zshrc ~/.zshrc
 	@cp -v .p10k.zsh ~/.p10k.zsh
 	@cp -v .zprofile ~/.zprofile
+	@cp -v .zshenv ~/.zshenv
 	@echo "🤪 zsh 完成"
 
 kitty:
