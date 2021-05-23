@@ -3,25 +3,22 @@
 {
   home.packages = [
     pkgs.neofetch
-    pkgs.ranger
-    pkgs.alacritty
+    pkgs.kitty
     pkgs.tmux
     pkgs.mpv
     pkgs.go
     pkgs.gopls
+    pkgs.fontconfig
+    pkgs.source-han-serif-simplified-chinese
   ];
-
+  
   nixpkgs.overlays = [
     (import (builtins.fetchTarball {
       url = https://github.com/nix-community/emacs-overlay/archive/master.tar.gz;
     }))
   ];
-
-  programs.git = {
-    enable = true;
-    userName  = "keke";
-    userEmail = "librek@protonmail.com";
-  };
+  
+  fonts.fontconfig.enable = true;
   
   programs.emacs = {
     enable = true;
