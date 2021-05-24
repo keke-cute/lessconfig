@@ -7,6 +7,7 @@
     pkgs.go
     pkgs.gopls
     pkgs.cmake
+    pkgs.ripgrep
   ];
   
   nixpkgs.overlays = [
