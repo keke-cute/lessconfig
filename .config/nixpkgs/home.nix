@@ -6,6 +6,7 @@
     pkgs.tmux
     pkgs.go
     pkgs.gopls
+    pkgs.cmake
   ];
   
   nixpkgs.overlays = [
