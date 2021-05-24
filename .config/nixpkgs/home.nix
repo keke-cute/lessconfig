@@ -2,14 +2,10 @@
 
 {
   home.packages = [
-    pkgs.neofetch
     pkgs.kitty
     pkgs.tmux
-    pkgs.mpv
     pkgs.go
     pkgs.gopls
-    pkgs.fontconfig
-    pkgs.source-han-serif-simplified-chinese
   ];
   
   nixpkgs.overlays = [
@@ -17,8 +13,6 @@
       url = https://github.com/nix-community/emacs-overlay/archive/master.tar.gz;
     }))
   ];
-  
-  fonts.fontconfig.enable = true;
   
   programs.emacs = {
     enable = true;
