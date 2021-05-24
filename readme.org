@@ -1,4 +1,4 @@
-[[https://github.com/keke-cute/config][https://img.shields.io/cran/l/config.svg]]
+[[https://github.com/keke-cute/config][https://img.shields.io/github/license/keke-cute/config.svg]]
 * Dependencies
   - git
   - gnupg
