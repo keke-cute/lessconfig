@@ -8,6 +8,9 @@
     pkgs.gopls
     pkgs.cmake
     pkgs.ripgrep
+    pkgs.docker
+    pkgs.docker-machine
+    pkgs.aria2
   ];
   
   nixpkgs.overlays = [
