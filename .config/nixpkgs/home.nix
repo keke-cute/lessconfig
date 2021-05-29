@@ -13,6 +13,7 @@
     pkgs.aria2
     pkgs.tdlib
     pkgs.pfetch
+    pkgs.pkg-config
   ];
   
   nixpkgs.overlays = [
