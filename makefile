@@ -9,7 +9,7 @@ ifeq ($(wildcard ~/Repos/password-store),)
 $(shell mkdir ~/Repos & git clone https://git.zx2c4.com/password-store ~/Repos/password-store)
 endif
 
-mac: all macpath squirrel hammerspoon
+mac: all macpath squirrel hammerspoon mpv key
 
 all: zsh kitty rime git nix
 
@@ -41,6 +41,11 @@ nix:
 mpv:
 	@cp -rv $(RDIR)/mpv $(DIR)
 	@echo "😛 mpv 完成"
+
+key:
+	@cp -rv $(RDIR)/karabiner $(DIR)
+	@echo "😛 karabiner 完成"
+
 macpath:
 	@sudo perl -i -l -p -e 'print "/Users/keke/.local/bin\n/opt/local/sbin\n/opt/local/bin" if $$. == 1' /etc/paths
 	@echo "makefile里的perl $ 符号需要进行转义($$)"
