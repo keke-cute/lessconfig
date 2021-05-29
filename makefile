@@ -11,7 +11,7 @@ endif
 
 mac: all macpath squirrel hammerspoon
 
-all: zsh kitty rime git
+all: zsh kitty rime git nix
 
 zsh:
 	@cp -v .zshrc ~/.zshrc
@@ -34,6 +34,10 @@ git:
 	@git config --global user.signingkey librek@protonmail.com
 	@git config --global commit.gpgsign true
 	@echo "🤪 git 完成"
+
+nix:
+	@cp -rv $(RDIR)/nixpkgs $(DIR)
+	@echo "😛 nix 完成"
 
 macpath:
 	@sudo perl -i -l -p -e 'print "/Users/keke/.local/bin\n/opt/local/sbin\n/opt/local/bin" if $$. == 1' /etc/paths

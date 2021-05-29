@@ -11,6 +11,8 @@
     pkgs.docker
     pkgs.docker-machine
     pkgs.aria2
+    pkgs.tdlib
+    pkgs.pfetch
   ];
   
   nixpkgs.overlays = [
