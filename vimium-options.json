@@ -17,7 +17,7 @@
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "# Insert your preferred key mappings here.\nmap <f13> nextTab",
+  "keyMappings": "# Insert your preferred key mappings here.\nmap <f13> previousTab\nmap <f16> nextTab",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",

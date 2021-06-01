@@ -43,7 +43,21 @@
                     }
                 ]
             },
-            "devices": [],
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 1553,
+                        "vendor_id": 3897
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                }
+            ],
             "fn_function_keys": [
                 {
                     "from": {
@@ -174,11 +188,21 @@
             "simple_modifications": [
                 {
                     "from": {
-                        "key_code": "right_option"
+                        "key_code": "right_command"
                     },
                     "to": [
                         {
                             "key_code": "f13"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f16"
                         }
                     ]
                 }
