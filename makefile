@@ -1,5 +1,7 @@
 DIR := ~/.config
-RDIR := ./.config
+PWD := $(shell pwd)
+RDIR := $(shell pwd)/.config
+HOME := $(shell echo $$HOME)
 
 ifeq ($(wildcard ~/.zinit),)
 $(shell mkdir ~/.zinit && git clone https://github.com/zdharma/zinit.git ~/.zinit/bin)
@@ -14,16 +16,16 @@ mac: all macpath squirrel hammerspoon mpv key
 all: zsh kitty rime git
 
 zsh:
-	@cp -v .zshrc ~/.zshrc
-	@cp -v .p10k.zsh ~/.p10k.zsh
+	@ln -s $(PWD)/.zshrc $(HOME)/.zshrc
+	@ln -s $(PWD)/.p10k.zsh $(HOME)/.p10k.zsh
 	@echo "🤪 zsh 完成"
 
 kitty:
-	@cp -rv $(RDIR)/kitty $(DIR)
+	@ln -s $(RDIR)/kitty/kitty.conf $(DIR)/kitty
 	@echo "🤪 kitty 完成"
 
 rime:
-	@cp -rv $(RDIR)/rime $(DIR)
+	@ln -s $(RDIR)/rime $(DIR)
 	@echo "🤪 rime 完成"
 
 git:
@@ -34,19 +36,19 @@ git:
 	@echo "🤪 git 完成"
 
 nix1:
-	@cp -rv $(RDIR)/nixpkgs/home.nix $(DIR)/nixpkgs/home.nix
+	@ln -s $(RDIR)/nixpkgs/ryzen.nix $(DIR)/nixpkgs/home.nix
 	@echo "😛 nix 完成"
 
 nix2:
-	@cp -rv $(RDIR)/nixpkgs/mba.nix $(DIR)/nixpkgs/home.nix
+	@ln -s $(RDIR)/nixpkgs/mba.nix $(DIR)/nixpkgs/home.nix
 	@echo "😛 nix 完成"
 
-mpv:
-	@cp -rv $(RDIR)/mpv $(DIR)
-	@echo "😛 mpv 完成"
+#mpv:
+#	@ln -s $(RDIR)/mpv $(DIR)
+#	@echo "😛 mpv 完成"
 
 key:
-	@cp -rv $(RDIR)/karabiner $(DIR)
+	@ln -s $(RDIR)/karabiner $(DIR)
 	@echo "😛 karabiner 完成"
 
 macpath:
@@ -59,10 +61,10 @@ squirrel:
 	@echo "🤪 鼠须管完成"
 
 hammerspoon:
-	@cp -rv .hammerspoon ~/
+	@ln -s $(PWD)/.hammerspoon $(HOME)
 	@echo "🤪 hammerspoon 完成"
 
-clean:
-	@rm -rvf $(DIR)/{kitty,rime}
-	@rm -rvf ~/.zinit ~/.zshrc ~/.p10k.zsh ~/.zprofile ~/.gitconfig ~/Repos/password-store
-	@echo "🚮 清理完成～"
+#clean:
+#	@rm -rvf $(DIR)/{kitty,rime}
+#	@rm -rvf ~/.zinit ~/.zshrc ~/.p10k.zsh ~/.zprofile ~/.gitconfig ~/Repos/password-store
+#	@echo "🚮 清理完成～"
