@@ -5,8 +5,6 @@ sudo port -v install pkgconfig \
 		     openssl \
 		     sqlite3 \
 		     curl \
-		     librime \
-		     librime-devel \
 		     brotli \
 		     libsodium
 #		     librime-devel
