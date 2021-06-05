@@ -5,19 +5,17 @@ ifeq ($(wildcard ~/.zinit),)
 $(shell mkdir ~/.zinit && git clone https://github.com/zdharma/zinit.git ~/.zinit/bin)
 endif
 
-ifeq ($(wildcard ~/Repos/password-store),)
-$(shell mkdir ~/Repos & git clone https://git.zx2c4.com/password-store ~/Repos/password-store)
-endif
+#ifeq ($(wildcard ~/Repos/password-store),)
+#$(shell mkdir ~/Repos & git clone https://git.zx2c4.com/password-store ~/Repos/password-store)
+#endif
 
 mac: all macpath squirrel hammerspoon mpv key
 
-all: zsh kitty rime git nix
+all: zsh kitty rime git
 
 zsh:
 	@cp -v .zshrc ~/.zshrc
 	@cp -v .p10k.zsh ~/.p10k.zsh
-	@cp -v .zprofile ~/.zprofile
-	@cp -v .zshenv ~/.zshenv
 	@echo "🤪 zsh 完成"
 
 kitty:
@@ -35,9 +33,14 @@ git:
 	@git config --global commit.gpgsign true
 	@echo "🤪 git 完成"
 
-nix:
-	@cp -rv $(RDIR)/nixpkgs $(DIR)
+nix1:
+	@cp -rv $(RDIR)/nixpkgs/home.nix $(DIR)/nixpkgs/home.nix
 	@echo "😛 nix 完成"
+
+nix2:
+	@cp -rv $(RDIR)/nixpkgs/mba.nix $(DIR)/nixpkgs/home.nix
+	@echo "😛 nix 完成"
+
 mpv:
 	@cp -rv $(RDIR)/mpv $(DIR)
 	@echo "😛 mpv 完成"
