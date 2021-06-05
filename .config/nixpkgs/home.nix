@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  fonts.fontconfig.enable = true;
   home.packages = [
     pkgs.kitty
     pkgs.tmux
@@ -14,6 +15,8 @@
     pkgs.tdlib
     pkgs.pfetch
     pkgs.pkg-config
+    pkgs.mpv
+    pkgs.source-han-serif-simplified-chinese
   ];
   
   nixpkgs.overlays = [
@@ -23,7 +26,7 @@
   ];
   
   programs.emacs = {
-    enable = true;
+    enable = false;
     package = pkgs.emacsGcc;
   };
 
