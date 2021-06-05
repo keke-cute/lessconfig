@@ -11,6 +11,10 @@ endif
 #$(shell mkdir ~/Repos & git clone https://git.zx2c4.com/password-store ~/Repos/password-store)
 #endif
 
+ryzen: mac nix1
+
+mba: mac nix2
+
 mac: all macpath squirrel hammerspoon mpv key
 
 all: zsh kitty rime git
