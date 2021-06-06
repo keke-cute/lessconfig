@@ -3,17 +3,13 @@
 {
   fonts.fontconfig.enable = true;
   home.packages = [
-    pkgs.kitty
     pkgs.tmux
     pkgs.go
     pkgs.gopls
     pkgs.cmake
     pkgs.ripgrep
-    pkgs.docker
-    pkgs.docker-machine
     pkgs.aria2
     pkgs.tdlib
-    pkgs.pfetch
     pkgs.pkg-config
     pkgs.mpv
     pkgs.source-han-serif-simplified-chinese
@@ -26,7 +22,7 @@
   ];
   
   programs.emacs = {
-    enable = false;
+    enable = true;
     package = pkgs.emacsGcc;
   };
 
