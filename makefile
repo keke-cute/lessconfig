@@ -3,19 +3,21 @@ PWD := $(shell pwd)
 RDIR := $(shell pwd)/.config
 HOME := $(shell echo $$HOME)
 
+# zinit
 ifeq ($(wildcard ~/.zinit),)
 $(shell mkdir ~/.zinit && git clone https://github.com/zdharma/zinit.git ~/.zinit/bin)
 endif
 
-#ifeq ($(wildcard ~/Repos/password-store),)
-#$(shell mkdir ~/Repos & git clone https://git.zx2c4.com/password-store ~/Repos/password-store)
-#endif
+# mkdir nixpkgs
+ifeq ($(wildcard ~/.config/nixpkgs),)
+$(shell mkdir ~/.config/nixpkgs)
+endif
 
 ryzen: mac nix1
 
 mba: mac nix2
 
-mac: all macpath squirrel hammerspoon key
+mac: all macpath squirrel hammerspoon karabiner
 
 all: zsh kitty rime git
 
@@ -48,17 +50,13 @@ nix2:
 	@ln -s $(RDIR)/nixpkgs/mba.nix $(DIR)/nixpkgs/home.nix
 	@echo "😛 nix 完成"
 
-#mpv:
-#	@ln -s $(RDIR)/mpv $(DIR)
-#	@echo "😛 mpv 完成"
-
-key:
+karabiner:
 	@ln -s $(RDIR)/karabiner $(DIR)
 	@echo "😛 karabiner 完成"
 
 macpath:
-	@sudo perl -i -l -p -e 'print "/Users/keke/.local/bin\n/opt/local/sbin\n/opt/local/bin" if $$. == 1' /etc/paths
-	@echo "makefile里的perl $ 符号需要进行转义($$)"
+#makefile里的perl $ 符号需要进行转义($$)
+	@sudo perl -i -l -p -e 'print "/Users/keke/.nix-profile/bin\n/nix/bin\n/opt/local/sbin\n/opt/local/bin" if $$. == 1' /etc/paths
 	@echo "🤪 /etc/paths 完成"
 
 squirrel:
@@ -68,8 +66,3 @@ squirrel:
 hammerspoon:
 	@ln -s $(PWD)/.hammerspoon $(HOME)
 	@echo "🤪 hammerspoon 完成"
-
-#clean:
-#	@rm -rvf $(DIR)/{kitty,rime}
-#	@rm -rvf ~/.zinit ~/.zshrc ~/.p10k.zsh ~/.zprofile ~/.gitconfig ~/Repos/password-store
-#	@echo "🚮 清理完成～"

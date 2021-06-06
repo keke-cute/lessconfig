@@ -8,6 +8,7 @@
     pkgs.source-han-serif-simplified-chinese
     pkgs.go
     pkgs.gopls
+    pkgs.aria2
   ];
   
   nixpkgs.overlays = [
