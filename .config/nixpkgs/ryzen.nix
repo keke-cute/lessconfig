@@ -12,6 +12,7 @@
     pkgs.tdlib
     pkgs.pkg-config
     pkgs.mpv
+    pkgs.pass
     pkgs.source-han-serif-simplified-chinese
   ];
   
