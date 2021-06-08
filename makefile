@@ -3,7 +3,7 @@ PWD := $(shell pwd)
 RDIR := $(shell pwd)/.config
 HOME := $(shell echo $$HOME)
 
-# zinit
+# Rime
 ifeq ($(wildcard ~/Library/Rime),)
 $(shell mkdir ~/Library/Rime)
 endif
