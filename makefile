@@ -56,7 +56,7 @@ karabiner:
 
 macpath:
 #makefile里的perl $ 符号需要进行转义($$)
-	@sudo perl -i -l -p -e 'print "/Users/keke/.nix-profile/bin\n/nix/bin\n/opt/local/sbin\n/opt/local/bin" if $$. == 1' /etc/paths
+	@sudo perl -i -l -p -e 'print "/Users/keke/.nix-profile/bin\n/nix/bin" if $$. == 1' /etc/paths
 	@echo "🤪 /etc/paths 完成"
 
 squirrel:
