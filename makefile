@@ -4,6 +4,11 @@ RDIR := $(shell pwd)/.config
 HOME := $(shell echo $$HOME)
 
 # zinit
+ifeq ($(wildcard ~/Library/Rime),)
+$(shell mkdir ~/Library/Rime)
+endif
+
+# zinit
 ifeq ($(wildcard ~/.zinit),)
 $(shell mkdir ~/.zinit && git clone https://github.com/zdharma/zinit.git ~/.zinit/bin)
 endif
