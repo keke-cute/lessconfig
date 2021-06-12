@@ -13,6 +13,7 @@
     pkgs.pkg-config
     pkgs.mpv
     pkgs.pass
+    pkgs.graphviz    
     pkgs.source-han-serif-simplified-chinese
   ];
   

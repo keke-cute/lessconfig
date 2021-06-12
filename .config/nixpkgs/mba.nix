@@ -9,6 +9,8 @@
     pkgs.go
     pkgs.gopls
     pkgs.aria2
+    pkgs.ripgrep
+    pkgs.graphviz
   ];
   
   nixpkgs.overlays = [
