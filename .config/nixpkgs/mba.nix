@@ -7,6 +7,7 @@
     pkgs.pass
     pkgs.source-han-serif-simplified-chinese
     pkgs.go
+    pkgs.tmux
     pkgs.gopls
     pkgs.aria2
     pkgs.ripgrep
