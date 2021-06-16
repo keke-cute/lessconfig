@@ -12,6 +12,7 @@
     pkgs.aria2
     pkgs.ripgrep
     pkgs.graphviz
+    pkgs.ffmpeg
   ];
   
   nixpkgs.overlays = [
