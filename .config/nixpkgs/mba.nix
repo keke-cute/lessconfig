@@ -8,6 +8,7 @@
     pkgs.tmux
     pkgs.aria2
     pkgs.ripgrep
+    pkgs.unrar
     # For Media
     pkgs.mpv
     pkgs.ffmpeg
