@@ -3,24 +3,42 @@
 {
   fonts.fontconfig.enable = true;
   home.packages = [
+    # For Basic
+    pkgs.pass
     pkgs.tmux
+    pkgs.aria2
+    pkgs.ripgrep
+    pkgs.unrar
+    # For Media
+    pkgs.mpv
+    pkgs.ffmpeg
+    pkgs.graphviz
+    # For Code
     pkgs.go
     pkgs.gopls
-    pkgs.cmake
-    pkgs.ripgrep
-    pkgs.aria2
-    pkgs.tdlib
-    pkgs.pkg-config
-    pkgs.mpv
-    pkgs.pass
-    pkgs.graphviz    
+    # For Librime
+    # pkgs.capnproto
+    # pkgs.boost
+    # pkgs.cmake
+    # pkgs.leveldb
+    # pkgs.marisa
+    # pkgs.opencc
+    # pkgs.libyamlcpp
+    # For Font
     pkgs.source-han-serif-simplified-chinese
   ];
   
   nixpkgs.overlays = [
+    # Import emacs-overlay
     (import (builtins.fetchTarball {
       url = https://github.com/nix-community/emacs-overlay/archive/master.tar.gz;
     }))
+    # Apply patch to emacsGit (in emacs-overlsy)
+    # (self: super: {
+    #   emacsGit = super.emacsGit.overrideAttrs (oldAttrs: rec {
+    #     patches = oldAttrs.patches ++ [ ./no-titlebar.patch ];
+    #   });
+    # })
   ];
   
   programs.emacs = {
