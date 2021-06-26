@@ -24,7 +24,7 @@ mba: mac nix2
 
 mac: all macpath squirrel hammerspoon karabiner
 
-all: zsh kitty rime git
+all: zsh kitty rime git tmux
 
 zsh:
 	@ln -s $(PWD)/.zshrc $(HOME)/.zshrc
@@ -46,6 +46,9 @@ git:
 	@git config --global user.signingkey librek@protonmail.com
 	@git config --global commit.gpgsign true
 	@echo "🤪 git 完成"
+
+tmux:
+	@ln -s $(PWD)/.tmux.conf $(HOME)/.tmux.conf
 
 nix1:
 	@ln -s $(RDIR)/nixpkgs/ryzen.nix $(DIR)/nixpkgs/home.nix
