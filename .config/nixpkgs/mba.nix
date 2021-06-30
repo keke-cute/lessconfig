@@ -14,9 +14,12 @@
     pkgs.mpv
     pkgs.ffmpeg
     pkgs.graphviz
-    # For Code
+    # For Golang
     pkgs.go
     pkgs.gopls
+    # For Rust
+    pkgs.rustc
+    pkgs.rust-analyzer
     # For Librime
     # pkgs.capnproto
     # pkgs.boost
