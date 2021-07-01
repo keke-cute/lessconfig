@@ -10,15 +10,19 @@
     pkgs.aria2
     pkgs.ripgrep
     pkgs.unrar
+    pkgs.tldr
+    pkgs.fzf
     # For Media
     pkgs.mpv
     pkgs.ffmpeg
     pkgs.graphviz
+    pkgs.rclone
     # For Golang
     pkgs.go
     pkgs.gopls
     # For Rust
     pkgs.rustc
+    pkgs.cargo
     pkgs.rust-analyzer
     # For Librime
     # pkgs.capnproto
