@@ -32,7 +32,10 @@
     # pkgs.marisa
     # pkgs.opencc
     # pkgs.libyamlcpp
+    # For Tex
+    pkgs.texlive.combined.scheme-full
     # For Font
+    pkgs.fontconfig
     pkgs.source-han-serif-simplified-chinese
   ];
   
