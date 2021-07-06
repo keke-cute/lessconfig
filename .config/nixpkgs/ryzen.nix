@@ -10,15 +10,19 @@
     pkgs.aria2
     pkgs.ripgrep
     pkgs.unrar
+    pkgs.tldr
+    pkgs.fzf
     # For Media
     pkgs.mpv
     pkgs.ffmpeg
     pkgs.graphviz
+    pkgs.rclone
     # For Golang
     pkgs.go
     pkgs.gopls
     # For Rust
     pkgs.rustc
+    pkgs.cargo
     pkgs.rust-analyzer
     # For Librime
     # pkgs.capnproto
@@ -28,7 +32,10 @@
     # pkgs.marisa
     # pkgs.opencc
     # pkgs.libyamlcpp
+    # For Tex
+    pkgs.texlive.combined.scheme-full
     # For Font
+    pkgs.fontconfig
     pkgs.source-han-serif-simplified-chinese
   ];
   
@@ -47,7 +54,7 @@
   
   programs.emacs = {
     enable = true;
-    package = pkgs.emacsGcc;
+    package = pkgs.emacsGit;
   };
 
   # Let Home Manager install and manage itself.
