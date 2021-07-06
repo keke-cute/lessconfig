@@ -22,13 +22,12 @@ ryzen: mac nix1
 
 mba: mac nix2
 
-mac: all macpath squirrel hammerspoon karabiner
+mac: all squirrel hammerspoon karabiner
 
 all: zsh kitty rime git tmux
 
 zsh:
 	@ln -s $(PWD)/.zshrc $(HOME)/.zshrc
-	@ln -s $(PWD)/.zprofile $(HOME)/.zprofile
 	@ln -s $(PWD)/.p10k.zsh $(HOME)/.p10k.zsh
 	@echo "🤪 zsh 完成"
 

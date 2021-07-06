@@ -12,6 +12,12 @@
     pkgs.unrar
     pkgs.tldr
     pkgs.fzf
+    pkgs.smartmontools
+    #pkgs.exa
+    #pkgs.dua
+    #pkgs.fd
+    #pkgs.delta
+    #pkgs.bat
     # For Media
     pkgs.mpv
     pkgs.ffmpeg
