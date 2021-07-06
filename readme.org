@@ -5,15 +5,11 @@
   - make
   - ...
 * Usage
-  MacBook Air
-  #+begin_src shell
-    make mba
-  #+end_src
-  Ryzentosh
-  #+begin_src shell
-    make ryzen
-  #+end_src
-  Other
-  #+begin_src shell
-    make all
-  #+end_src
+For Mac
+#+begin_src shell
+  make mac
+#+end_src
+For Linux
+#+begin_src shell
+  make all
+#+end_src

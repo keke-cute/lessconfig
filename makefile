@@ -18,11 +18,7 @@ ifeq ($(wildcard ~/.config/nixpkgs),)
 $(shell mkdir ~/.config/nixpkgs)
 endif
 
-ryzen: mac nix1
-
-mba: mac nix2
-
-mac: all squirrel hammerspoon karabiner
+mac: all squirrel hammerspoon nix karabiner
 
 all: zsh kitty rime git tmux
 
@@ -49,14 +45,9 @@ git:
 tmux:
 	@ln -s $(PWD)/.tmux.conf $(HOME)/.tmux.conf
 
-nix1:
-	@ln -s $(RDIR)/nixpkgs/ryzen.nix $(DIR)/nixpkgs/home.nix
-	@echo "😛 nix 完成"
-
-nix2:
-	@ln -s $(RDIR)/nixpkgs/mba.nix $(DIR)/nixpkgs/home.nix
-	@echo "😛 nix 完成"
-
+nix:
+	@ln -s $(RDIR)/nixpkgs/home.nix $(DIR)/nixpkgs/home.nix
+	@echo "😛 Nix 完成"
 karabiner:
 	@ln -s $(RDIR)/karabiner $(DIR)
 	@echo "😛 karabiner 完成"
@@ -67,7 +58,7 @@ macpath:
 	@echo "🤪 /etc/paths 完成"
 
 squirrel:
-	@cp -rv $(RDIR)/rime/* ~/Library/Rime
+	@cp -r $(RDIR)/rime/* ~/Library/Rime
 	@echo "🤪 鼠须管完成"
 
 hammerspoon:
