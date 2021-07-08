@@ -18,6 +18,9 @@
     #pkgs.fd
     #pkgs.delta
     #pkgs.bat
+    # For Gpg
+    pkgs.gnupg
+    pkgs.pinentry_mac
     # For Media
     pkgs.mpv
     pkgs.ffmpeg
