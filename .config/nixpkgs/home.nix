@@ -13,6 +13,7 @@
     pkgs.tldr
     pkgs.fzf
     pkgs.smartmontools
+    # Rust Tools
     #pkgs.exa
     #pkgs.dua
     #pkgs.fd
@@ -51,7 +52,8 @@
   nixpkgs.overlays = [
     # Import emacs-overlay
     (import (builtins.fetchTarball {
-      url = https://github.com/nix-community/emacs-overlay/archive/master.tar.gz;
+      #Then you can replace the word master in there (which is the branch name) with a commit id (for exapmle 3c649677294bdedb776ec69b14719b7171666a8a which is the latest commit on master as of writing).
+      url = https://github.com/nix-community/emacs-overlay/archive/96e3b61bc94627cb53012d3211b4e16dd6bba5ed.tar.gz;
     }))
     # Apply patch to emacsGit (in emacs-overlsy)
     # (self: super: {
