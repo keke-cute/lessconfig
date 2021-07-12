@@ -13,6 +13,7 @@
     pkgs.tldr
     pkgs.fzf
     pkgs.smartmontools
+    pkgs.socat
     # Rust Tools
     #pkgs.exa
     #pkgs.dua
