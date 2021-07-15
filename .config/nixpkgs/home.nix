@@ -54,7 +54,7 @@
     # Import emacs-overlay
     (import (builtins.fetchTarball {
       #Then you can replace the word master in there (which is the branch name) with a commit id (for exapmle 3c649677294bdedb776ec69b14719b7171666a8a which is the latest commit on master as of writing).
-      url = https://github.com/nix-community/emacs-overlay/archive/09ca15775275250fdfd6004465ed6fa342194b2b.tar.gz;
+      url = https://github.com/nix-community/emacs-overlay/archive/14e83e6d8949c04a99c5998fffea1d58ee37a380.tar.gz;
     }))
     # Apply patch to emacsGit (in emacs-overlsy)
     # (self: super: {
